@@ -17,7 +17,7 @@
     </nav>
 
     <h1>Kontakta oss gärna via vårt fina formulär här nedan</h1>
-    
+
     <!--Metod get ska vi undvika nästan alltid, vi väljer metod post hellre-->
     <form action="#" method="get">
         <p>
@@ -25,35 +25,69 @@
             Ditt förnamn: <br><input type="text" name="firstname">
         </p>
 
-    <!--Ett element som tänkt vara ledtext till ex ett formulär-->
+        <!--Ett element som tänkt vara ledtext till ex ett formulär-->
         <p>
             <label for="lastname"></label>
             Ditt efternamn: <br><input type="text" name="lastname">
         </p>
-        
-    <!--Alternativt sätt att använda label-element-->
+
+        <!--Alternativt sätt att använda label-element-->
         <p>
             <label>
                 Ange e-post <br>
-                <input type="email" name="email" id="email"> 
+                <input type="email" name="email" id="email">
             </label>
         </p>
 
-    <!--Ytterligare varianter på inputfält med placeholer och sen hoppa över ledtext-->
+        <!--Ytterligare varianter på inputfält med placeholer och sen hoppa över ledtext-->
         <p>
-    <!--Gör attributet required-->
-            <input type="text" name="username" placeholder="Ditt användarnmn" required>
+            <!--Gör attributet required-->
+            <input type="text" name="username" placeholder="Ditt användarnmn" required minlength="2" maxlength="5">
         </p>
-    
+
         <p>
             <input type="password" name="password" id="password" placeholder="Lösenord">
         </p>
+
+        <p>
+            Bästa färgen på en katt - välj här!
+        <input type="color" name="color" id="color">
+        </p>
+
+        <p>
+            Är du okej med att jag sparar all din info för evigt?
+            <input type="checkbox" name="checkbox" id="checkbox" required>
+        </p>
         
-        <input type="submit" value="Skicka">
+        <p>
+            Välj vecka
+            <input type="week" name="week" id="week">
+        </p>
+
+        <p>
+            Berätta om dig själv för mig <br>
+            <textarea name="letter" id="letter" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            Vilka katter föredrar du? (var ärlig)
+            <select name="cats" id="cats" multiple size="2">
+                <option value="Ragdoll">Ragdoll</option>
+                <option value="Bondkatt">Bondkatt</option>
+                <option value="Britisk">Britisk korthår</option>
+                <option value="Sibirisk">Sibirisk</option>
+                <option value="Norsk">Norsk skogskatt</option>
+            </select>
+        </p>
+
+        <p>
+            <input type="submit" value="Skicka">
+        </p>
+
     </form>
 
     <hr>
-    
+
     <footer>
         <!--Här kan du lägga in olika symboler - ex för copyrights genom att använda html-entites-->
         &copy; Hammarblom
