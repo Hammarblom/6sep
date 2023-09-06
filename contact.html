@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+
+<body>
+    <header>
+        Ett sidhuvud - webbplatsens identitet typ en bild
+    </header>
+
+    <nav>
+        <a href="index.html">Hem</a>&nbsp;&nbsp;<a href="cats.html">Om katter</a> <a href="contact.html">Kontakt</a>
+    </nav>
+
+    <h1>Kontakta oss gärna via vårt fina formulär här nedan</h1>
+    
+    <!--Metod get ska vi undvika nästan alltid, vi väljer metod post hellre-->
+    <form action="#" method="get">
+        <p>
+            <label for="firstname"></label>
+            Ditt förnamn: <br><input type="text" name="firstname">
+        </p>
+
+    <!--Ett element som tänkt vara ledtext till ex ett formulär-->
+        <p>
+            <label for="lastname"></label>
+            Ditt efternamn: <br><input type="text" name="lastname">
+        </p>
+        
+    <!--Alternativt sätt att använda label-element-->
+        <p>
+            <label>
+                Ange e-post <br>
+                <input type="email" name="email" id="email"> 
+            </label>
+        </p>
+
+    <!--Ytterligare varianter på inputfält med placeholer och sen hoppa över ledtext-->
+        <p>
+    <!--Gör attributet required-->
+            <input type="text" name="username" placeholder="Ditt användarnmn" required>
+        </p>
+    
+        <p>
+            <input type="password" name="password" id="password" placeholder="Lösenord">
+        </p>
+        
+        <input type="submit" value="Skicka">
+    </form>
+
+    <hr>
+    
+    <footer>
+        <!--Här kan du lägga in olika symboler - ex för copyrights genom att använda html-entites-->
+        &copy; Hammarblom
+    </footer>
+
+</body>
+
+</html>
