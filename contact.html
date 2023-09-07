@@ -44,7 +44,6 @@
             <!--Gör attributet required-->
             <input type="text" name="username" placeholder="Ditt användarnmn" required minlength="2" maxlength="5">
         </p>
-
         <p>
             <input type="password" name="password" id="password" placeholder="Lösenord">
         </p>
@@ -70,7 +69,7 @@
         </p>
 
         <p>
-            Vilka katter föredrar du? (var ärlig)
+            Vilka katter föredrar du? (var ärlig och håll inne ctrl om du vill välja fler) <br>
             <select name="cats" id="cats" multiple size="2">
                 <option value="Ragdoll">Ragdoll</option>
                 <option value="Bondkatt">Bondkatt</option>
@@ -80,13 +79,41 @@
             </select>
         </p>
 
-        <p>
-            <input type="submit" value="Skicka">
-        </p>
+        
+        <input type="submit" value="Skicka">
+
+        <input type="reset" value="Börja om">
+
+        <button type="reset">Börja om</button>
 
     </form>
-
+    <br><br>
     <hr>
+    <hr>
+
+    <form action="#" method="get">
+        <h3>
+            Vill du ha våra magiska nyhetsbrev? <br>
+            <input type="email" name="newsletter" id="newsletter" required placeholder="Ange e-post" size="50">
+        </h3>
+
+        <p>Vilka djur är du intresserade av?</p>
+        <label for="pets_cats">Katter</label>
+        <input type="checkbox" name="pets_cats" id="pets_cats">
+        <br>
+        <label for="pets_cats">Katter</label>
+        <input type="checkbox" name="pets_cats" id="pets_cats">
+        <br>
+        <label for="pets_cats">Katter</label>
+        <input type="checkbox" name="pets_cats" id="pets_cats">
+        <br>
+        <label for="pets_cats">Katter</label>
+        <input type="checkbox" name="pets_cats" id="pets_cats">
+
+        <p>
+            <button type="submit">Mejla mig!</button>
+        </p>
+    </form>
 
     <footer>
         <!--Här kan du lägga in olika symboler - ex för copyrights genom att använda html-entites-->
